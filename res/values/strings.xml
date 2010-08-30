@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, pauker!</string>
+    <string name="app_name">Paukeroid</string>
+    <string name="next">Weiter</string>
+    <string name="back">Zurück</string>
+    <string name="title_question">Frage:</string>
+    <string name="title_answer">Antwort:</string>
+</resources>

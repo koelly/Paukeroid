@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:title="Intent preference"
+	android:summary="System preference imported using an intent">
+
+	<intent android:action="android.settings.DISPLAY_SETTINGS "/>
+	
+
+	<PreferenceCategory android:title="My Preference Category">
+		<CheckBoxPreference
+			android:key="ASK_ORDERD"
+			android:title="Geordnet fragen"
+			android:summary="Ansonsten zufällige Reihenfolge"
+			android:defaultValue="true"/>
+	</PreferenceCategory>
+	
+	<PreferenceCategory android:title="Lektion wählen">
+		<ListPreference
+           android:title="List Preference"
+           android:summary="This preference allows to select an item in an array"
+           android:key="LESSON"/>
+
+	</PreferenceCategory>
+	
+	
+
+           
+</PreferenceScreen>

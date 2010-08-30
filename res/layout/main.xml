@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+	<TextView  
+		android:paddingTop="5dp"
+		android:gravity="center"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:id="@+id/title">
+	</TextView>
+    
+    <TextView 
+		android:layout_below="@id/title" 
+		android:scrollbars = "vertical"
+		android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:id="@+id/title_question"
+	    android:text="@string/title_question"
+	    android:textStyle="bold">
+    </TextView>
+    
+	<TextView 
+		android:id="@+id/question"
+		android:layout_below="@id/title_question" 
+		android:scrollbars = "vertical"
+		android:maxLines="6"
+		android:minLines="6"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content">
+    </TextView>
+	
+	<TextView 
+		android:id="@+id/title_answer"
+		android:layout_below="@id/question"
+		android:scrollbars = "vertical"
+		android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:text="@string/title_answer"
+	    android:textStyle="bold">
+    </TextView>
+	
+	<TextView
+		android:layout_below="@id/title_answer"
+		android:scrollbars = "vertical"
+		android:maxLines="6"
+		android:minLines="6"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:id="@+id/answer">
+	</TextView>
+	
+	
+	<RelativeLayout 
+        android:id="@+id/InnerRelativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_centerHorizontal="true"        
+		android:layout_alignParentBottom="true" >
+
+	   	<Button 
+	   		android:layout_below="@id/answer"
+			android:layout_height="wrap_content" 
+			android:layout_width="100dp" 
+			android:text="@string/back" 
+			android:id="@+id/back">
+		</Button>
+	
+		<Button 
+			android:layout_below="@id/answer"
+			android:layout_height="wrap_content" 
+			android:layout_width="100dp" 
+			android:layout_toRightOf="@+id/back" 
+			android:text="@string/next" 
+			android:id="@+id/next">
+		</Button>
+	</RelativeLayout>    
+</RelativeLayout>
