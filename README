@@ -1,2 +1,23 @@
-h1 PAUKEROID
-h2 Beschreibung
+==== Paukeroid ====
+
+=== Warnung ===
+Die Software ist nicht fertig! Noch lange nicht!
+
+=== Beschreibung ===
+Paukeroid ist eine Anwendung für die mobile Plattform Android.\\
+Paukeroid kann die XML bzw. PAU Dateien lesen, die für das Desktop Programm Pauker geschrieben wurden.
+
+=== Features ===
+Noch nicht viel, aber folgendes:
+* PAU und XML Dateien verarbeiten
+* Jede "Karte" wird durchgegangen. Erst die Frage, dann die Antwort dazu eingeblendet
+* Anzeige der Beschreibung der Lektion
+
+=== Fehlende Features ===
+ufff... Viele!
+
+=== Lektionen hinzufügen ===
+Die Lektionen müssen auf der SD Karte im Verzeichnis /sdcard/pauker/ entpackt werden.\\
+
+=== Lizenz ===
+GPLv3: http://www.gnu.de/documents/gpl.de.html
