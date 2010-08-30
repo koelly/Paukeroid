@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-  xmlns:android="http://schemas.android.com/apk/res/android"
-  android:layout_width="wrap_content"
-  android:layout_height="wrap_content">
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
+    android:background="#CDB38B">
   
 	<ScrollView 
 		android:id="@+id/ScrollView01" 
@@ -13,7 +18,8 @@
 		android:text="@+id/content" 
 		android:id="@+id/content" 
 		android:layout_width="fill_parent" 
-		android:layout_height="fill_parent">
+		android:layout_height="fill_parent"
+		android:textColor="#575757">
 		</TextView>
 
 	</ScrollView>

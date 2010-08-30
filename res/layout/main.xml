@@ -3,54 +3,81 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
+    android:layout_height="fill_parent" 
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
+    android:background="#CDB38B"
+    
+    >
+
     
 	<TextView  
+		android:id="@+id/title"
 		android:paddingTop="5dp"
+		android:paddingBottom="5dp"
 		android:gravity="center"
 	    android:layout_width="fill_parent" 
 	    android:layout_height="wrap_content" 
-	    android:id="@+id/title">
+	    android:textColor="#757575">
 	</TextView>
     
     <TextView 
+	    android:id="@+id/title_question"
+		android:background="#EECFA1"
 		android:layout_below="@id/title" 
 		android:scrollbars = "vertical"
 		android:layout_width="fill_parent" 
 	    android:layout_height="wrap_content" 
-	    android:id="@+id/title_question"
 	    android:text="@string/title_question"
-	    android:textStyle="bold">
+	    android:textStyle="bold"
+	    android:textColor="#757575">
     </TextView>
     
 	<TextView 
 		android:id="@+id/question"
 		android:layout_below="@id/title_question" 
 		android:scrollbars = "vertical"
-		android:maxLines="6"
-		android:minLines="6"
+		android:maxLines="7"
+		android:minLines="5"
+		android:background="#FFDEAD"
 	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:textColor="#575757">
+    </TextView>
+	
+    <TextView 
+	    android:id="@+id/bar"
+		android:background="#CDB38B"
+		android:layout_below="@id/question"
+		android:minLines="1" 
+		android:layout_width="fill_parent" 
 	    android:layout_height="wrap_content">
     </TextView>
 	
 	<TextView 
 		android:id="@+id/title_answer"
-		android:layout_below="@id/question"
+		android:layout_below="@id/bar"
 		android:scrollbars = "vertical"
 		android:layout_width="fill_parent" 
 	    android:layout_height="wrap_content" 
+	    android:background="#EE6363"
 	    android:text="@string/title_answer"
-	    android:textStyle="bold">
+	    android:textStyle="bold"
+	    android:textColor="#757575">
     </TextView>
 	
 	<TextView
 		android:layout_below="@id/title_answer"
 		android:scrollbars = "vertical"
-		android:maxLines="6"
-		android:minLines="6"
+		android:maxLines="7"
+		android:minLines="5"
+	    android:background="#FF6A6A"
 	    android:layout_width="fill_parent" 
 	    android:layout_height="wrap_content" 
-	    android:id="@+id/answer">
+	    android:id="@+id/answer"
+	    android:textColor="#575757">
 	</TextView>
 	
 	
@@ -58,6 +85,7 @@
         android:id="@+id/InnerRelativeLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
 		android:layout_centerHorizontal="true"        
 		android:layout_alignParentBottom="true" >
 
